@@ -26,7 +26,7 @@ headers = {'id': my_id}
 
 
 # get public key to encrypt data
-key_url = '## URL PARA BAIXAR A CHAVE DE CRIPTOGRAFIA ##'
+key_url = 'http://ingress-impact-platform.duckdns.org/key'
 key_file = "./etc/serverKey.pub"
 
 try:    
@@ -51,9 +51,9 @@ except Exception as e:
     print('## Verifique se sua redacao esta no arquivo ./etc/essay.txt')
 
 #set user info
-name = 'SEU NOME'
-email = 'SEU EMAIL'
-phone = 'SEU TELEFONE COM DDD'
+name = 'Elson Felipe de Oliveira Urbano'
+email = 'elson_felipe@hotmail.com'
+phone = '(83)998734249'
 
 # prepare body data
 body = {    
@@ -64,7 +64,7 @@ body = {
 }
 
 # send data
-post_url = '## URL PARA ENVIAR O TESTE ##'
+post_url = 'http://ingress-impact-platform.duckdns.org/apply'
 
 print(f"Tentando executar o envio das informações para {post_url}\nRequest:\n\tHeaders\t\t{headers}\n\tBody:\t\t{body}")
 
